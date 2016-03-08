@@ -1,0 +1,39 @@
+.header {
+    position: relative;
+    height: 747px;
+    background: url('images/smudge.png') left bottom/cover no-repeat; // prevent illegible text while image loads
+    color: #FFFFFF;
+    // z-index: 1;
+
+    &__image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .section-content {
+        position: relative;
+        top: 50%;
+        transform: translateY( -50% );
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 5.2rem;
+        line-height: 4.4rem;
+        color: #FFFFFF;
+        font-weight: 200;
+        max-width: 550px;
+    }
+
+    &__text {
+        margin-top: 26px;
+        max-width: 480px;
+    }
+}

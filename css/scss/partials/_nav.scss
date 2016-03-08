@@ -3,12 +3,13 @@
 
 /*nav*/.nav {
     height: 70px;
-    background: rgba( 0, 0, 0, 0.9 );
+    background: rgba( 0, 0, 0, 0.8 );
     color: #FFFFFF;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
+    z-index: 2;
 
     &__list {
         @include content-container();
@@ -58,6 +59,11 @@
     height: 50px;
     background: rgba( 255, 255, 255, 0.8 );
     border-bottom: 1px solid #cecece;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    left: 0;
+    z-index: 1;
 
     &__list {
         @include content-container();

@@ -15,7 +15,6 @@ html {
     -webkit-overflow-scrolling: touch;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    padding-top: 70px;
     font-family: sans-serif;
 }
 
@@ -26,4 +25,13 @@ body {
 
 body {
     overflow: hidden;
+}
+
+.section-content {
+    @include content-container();
+}
+
+p {
+    font-size: 1.75rem;
+    line-height: 1.8rem;
 }
