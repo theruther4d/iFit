@@ -1,3 +1,6 @@
+$light: #929292;
+$dark: #424242;
+
 *,
 *:before,
 *:after {
@@ -13,6 +16,7 @@ html {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     padding-top: 70px;
+    font-family: sans-serif;
 }
 
 html,
