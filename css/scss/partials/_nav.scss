@@ -1,0 +1,53 @@
+/*nav*/.nav {
+    height: 70px;
+    background: rgba( 0, 0, 0, 0.9 );
+    color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    &__list {
+        @include content-container();
+        border: 1px solid red;
+        height: 100%;
+        vertical-align: middle;
+        font-size: 0;    // reset whitespace
+        text-align: right;
+
+        &__item {
+            display: inline-block;
+            height: 70px;
+            line-height: 70px;
+            vertical-align: middle;
+
+            &:last-of-type {
+                margin-right: -6px;
+            }
+
+            &__link {
+                display: block;
+                position: relative;
+                height: 100%;
+                line-height: 70px;
+                font-size: 1.3rem;
+                color: inherit;
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: 0 6px;
+            }
+
+            &-logo {
+                position: absolute;
+                top: 0;
+                left: 5%;
+            }
+
+            .logo {
+                width: auto;
+                height: 25px;
+                margin-top: 22px;
+            }
+        }
+    }
+}
